@@ -6,8 +6,10 @@ function App() {
 
   return (
     <>
-      <button className="btn btn__open" onClick={() => setOpenModal(true)}>Open</button>
-      <Modal Open={openModal}/>
+      <button className="btn btn__open" onClick={() => setOpenModal(true)}>
+        Open
+      </button>
+      <Modal Open={openModal} close={openModal} onClose={() => setOpenModal(false)} />
     </>
   );
 }

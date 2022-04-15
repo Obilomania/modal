@@ -15,9 +15,9 @@
   font-variant: small-caps;
 }
 .btn:hover {
-    background-color:white;
-  color:  rgb(76, 76, 239);
-  border: 0.5px solid rgb;
+  background-color: white;
+  color: rgb(76, 76, 239);
+  border: 1px solid rgb(76, 76, 239);
 }
 .btn__open {
   position: absolute;
@@ -26,4 +26,46 @@
   -ms-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.modal__pop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  z-index: 3;
+  background-color: rgb(238, 237, 237);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 0rem 3rem 0rem 0rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  transition: 2s all ease-in-out;
+}
+.modal__pop img {
+  width: 20rem;
+}
+.side__modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.side__modal h2 {
+  letter-spacing: 0.2rem;
+  font-variant: small-caps;
+}
+.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
 }
