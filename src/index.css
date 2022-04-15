@@ -45,7 +45,7 @@
   padding: 0rem 3rem 0rem 0rem;
   border-radius: 2rem;
   overflow: hidden;
-  transition: 2s all ease-in-out;
+  transition: all 2s ease;
 }
 .modal__pop img {
   width: 20rem;
